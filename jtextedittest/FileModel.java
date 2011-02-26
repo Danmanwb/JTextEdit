@@ -5,11 +5,18 @@
 //
 //============================================================ 
 
-package jtextedit;
+/**
+ * 
+ */
+package jtextedittest;
 
-public class FileController {
-	System.out.println("lol");
-	
-	
+
+public class FileModel {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
 
 }

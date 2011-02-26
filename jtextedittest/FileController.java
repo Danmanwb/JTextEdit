@@ -5,7 +5,7 @@
 //
 //============================================================ 
 
-package jtextedit;
+package jtextedittest;
 
 public class FileController {
 	System.out.println("lol");

@@ -1,15 +1,16 @@
-// Copyright (c) 2011
+// Copyright (c) 2010, Ryan J ryanjayako@gmail.com 
 //===== Description: ========================================= 
 //
 //===== Additional Comments: ================================= 
 //
 //============================================================ 
 
+/**
+ * 
+ */
 package jtextedit;
 
-public class FileController {
-	System.out.println("lol");
-	
-	
+
+public enum Commands {
 
 }
