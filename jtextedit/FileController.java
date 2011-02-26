@@ -8,5 +8,6 @@
 package jtextedit;
 
 public class FileController {
+	System.out.println("lol");
 
 }
