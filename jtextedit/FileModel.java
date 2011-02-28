@@ -16,6 +16,8 @@ public class FileModel {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		FileView view = new FileView(null);
+		
 
 	}
 
