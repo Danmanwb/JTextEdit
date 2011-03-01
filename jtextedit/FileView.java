@@ -8,11 +8,17 @@
 package jtextedit;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 
 public class FileView extends JFrame {
 
@@ -21,6 +27,15 @@ public class FileView extends JFrame {
 		setSize(700, 700);
 		setLayout(new BorderLayout());
 		JMenuBar menuBar = new JMenuBar();
+		JPanel statusPanel = new JPanel();
+		
+		//defining the panel layout
+		statusPanel.setLayout(new BorderLayout());
+		
+		
+		//adding a test label for status
+		JLabel statusDummy = new JLabel("Stuats : Not done  ");
+		statusPanel.add(statusDummy,BorderLayout.EAST);
 
 		// adding File components
 		JMenu fileMenu = new JMenu("File");
@@ -73,7 +88,13 @@ public class FileView extends JFrame {
 		menuBar.add(helpMenu);
 		
 		this.setJMenuBar(menuBar);
-		getContentPane().add(new JTextArea(), BorderLayout.CENTER);
+		
+		//adding scrollbar
+		JTextPane textArea = new JTextPane();
+		JScrollPane scrollPane = new JScrollPane(textArea);
+		
+		getContentPane().add(scrollPane, BorderLayout.CENTER);
+		getContentPane().add(statusPanel, BorderLayout.SOUTH);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
